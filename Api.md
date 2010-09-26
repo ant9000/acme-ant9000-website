@@ -1,8 +1,8 @@
 ### The FoxNode server-side API ###
 
-FoxNode aims at simplifying access to your hardware resources from within NodeJS. The library innermost part is [acme.gpio](/ant9000/FoxNode/tree/master/acme/gpio/), a thin wrapper around the Linux kernel [GPIO](http://www.kernel.org/doc/Documentation/gpio.txt) sys interface. A C helper program for dispatching user space interrupts to NodeJS is also included: your code can react immediately to state changes, without wasting CPU cycles in querying the hardware.
+FoxNode aims at simplifying access to your hardware resources from within NodeJS. The library innermost part is [acme.gpio](https://github.com/ant9000/FoxNode/tree/master/acme/gpio/), a thin wrapper around the Linux kernel [GPIO](http://www.kernel.org/doc/Documentation/gpio.txt) sys interface. A C helper program for dispatching user space interrupts to NodeJS is also included: your code can react immediately to state changes, without wasting CPU cycles in querying the hardware.
 
-The higher level [acme.daisy](/ant9000/FoxNode/tree/master/daisy/) interface builds on these facilities to offer a simple programmatic access to Daisy devices. For now, only Daisy5 and Daisy11 are implemented, but support for more peripherals is planned.
+The higher level [acme.daisy](https://github.com/ant9000/FoxNode/tree/master/daisy/) interface builds on these facilities to offer a simple programmatic access to Daisy devices. For now, only Daisy5 and Daisy11 are implemented, but support for more peripherals is planned.
 
 -  [GPIO](#GPIO)
 -  [Daisy5](#Daisy5)

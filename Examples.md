@@ -13,7 +13,7 @@ Here is the complete list:
 <a name="test_gpio.js">A server side test for acme.gpio</a>
 -----------------------------------------------------------
 
-For this [example](/ant9000/FoxNode/tree/master/examples/test_gpio.js) we make use of two GPIO pins, namely J7.3 as input and J7.4 as output. Wire a push button between J7.3 and J7.40, and a led in series with a 1kOhm resistance between J7.4 and J7.1, then execute the program with
+For this [example](https://github.com/ant9000/FoxNode/tree/master/examples/test_gpio.js) we make use of two GPIO pins, namely J7.3 as input and J7.4 as output. Wire a push button between J7.3 and J7.40, and a led in series with a 1kOhm resistance between J7.4 and J7.1, then execute the program with
 
 ```bash
 node test_gpio.js
@@ -37,7 +37,7 @@ will toggle the state of J7.4 - you will see the led switching on and off, and a
 <a name="test_daisy.js">A server side test for acme.daisy</a>
 -------------------------------------------------------------
 
-For trying this [sample](/ant9000/FoxNode/tree/master/examples/test_daisy.js) you need a Daisy1 (the Daisy connector module), a Daisy5 (8 push buttons) and a Daisy11 (8 leds). Plug the Daisy1 onto your FoxBoard, then connect the Daisy5 to D5 and the Daisy11 to D2. You can then launch the program as
+For trying this [sample](https://github.com/ant9000/FoxNode/tree/master/examples/test_daisy.js) you need a Daisy1 (the Daisy connector module), a Daisy5 (8 push buttons) and a Daisy11 (8 leds). Plug the Daisy1 onto your FoxBoard, then connect the Daisy5 to D5 and the Daisy11 to D2. You can then launch the program as
 
 ```bash
 node test_daisy.js
@@ -60,7 +60,7 @@ will toggle the state of L3 on Daisy11 - you will see the led switching on and o
 <a name="meryl_gpio">Web app sample for GPIO, using meryl</a>
 ------------------------------------------------------------
 
-This [sample](/ant9000/FoxNode/tree/master/examples/meryl_gpio/) uses the same setup as the server side GPIO test, i.e. a push button connected to J7.3 and a led wired to J7.4 - but this time the interaction with the users will not be on the FoxBoard console, but on a web page.
+This [sample](https://github.com/ant9000/FoxNode/tree/master/examples/meryl_gpio/) uses the same setup as the server side GPIO test, i.e. a push button connected to J7.3 and a led wired to J7.4 - but this time the interaction with the users will not be on the FoxBoard console, but on a web page.
 
 On first usage, type
 
@@ -85,7 +85,7 @@ For more fun, point multiple browser windows to the same page and watch them as 
 <a name="express_daisy">Web app sample for Daisy, using express</a>
 -------------------------------------------------------------------
 
-Before starting the [example](/ant9000/FoxNode/tree/master/examples/express_daisy/), attach a Daisy5 to connector D5 on your Daisy1 and a Daisy11 to connector D2 - exactly as for the server side Daisy test.
+Before starting the [example](https://github.com/ant9000/FoxNode/tree/master/examples/express_daisy/), attach a Daisy5 to connector D5 on your Daisy1 and a Daisy11 to connector D2 - exactly as for the server side Daisy test.
 
 On first usage, type
 

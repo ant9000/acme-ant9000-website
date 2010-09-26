@@ -9,11 +9,11 @@
 
 Debian does not provide NodeJS within its Squeeze release, but it is available for Sid and to have it on the FoxBoard is mostly a matter or recompiling it.
 
-To let you jump start into NodeJs development, we provide [an archive](/ant9000/FoxNode/downloads/) of precompiled Debian packages for the FoxBoard.
+To let you jump start into NodeJs development, we provide [an archive](https://github.com/ant9000/FoxNode/downloads/) of precompiled Debian packages for the FoxBoard.
 
 Here are the instructions for downloading the archive to your FoxBoard, unpacking it and installing the debian packages:
 ```bash
-wget https://github.com/ant9000/FoxNode/downloads/nodejs-foxboard-debs.tar
+wget https://github.comhttps://github.com/ant9000/FoxNode/downloads/nodejs-foxboard-debs.tar
 tar xvf nodejs-foxboard-debs.tar
 cd debs
 dpkg -i `ls *.deb|grep -v dbg`

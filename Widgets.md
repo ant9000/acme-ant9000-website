@@ -1,6 +1,6 @@
 ### FoxNode Web page widgets ###
 
-With the intent of making my [examples](/ant9000/FoxNode/tree/master/examples/) nicer, I wrote a few Javascript widgets that you can find in the [media](/ant9000/FoxNode/tree/master/media/js) folder of FoxNode. 
+With the intent of making my [examples](https://github.com/ant9000/FoxNode/tree/master/examples/) nicer, I wrote a few Javascript widgets that you can find in the [media](https://github.com/ant9000/FoxNode/tree/master/media/js) folder of FoxNode. 
 
 Since they could be useful for their own sake, I will try to present them here in some detail:
 
