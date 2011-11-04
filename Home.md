@@ -2,12 +2,7 @@
 
 - presenting the FoxBoard and the Daisy modules
 - why NodeJS on the FoxBoard
-
-### Installing NodeJS ###
-
-- using precompiled .deb packages
-- installing from source
-- compiling your own .deb packages
+- [Installing NodeJS](Installing)
 
 ### FoxNode API for NodeJS ###
 
