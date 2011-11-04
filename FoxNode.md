@@ -1,4 +1,4 @@
-## FoxNode - a NodeJS library for interacting with FoxBoard hardware ##
+## A NodeJS library for interacting with FoxBoard hardware ##
 
 - presenting the FoxBoard and the Daisy modules
 - why NodeJS on the FoxBoard
