@@ -2,7 +2,7 @@
 
 - presenting the FoxBoard and the Daisy modules
 - why NodeJS on the FoxBoard
-- [Installing NodeJS](Installing)
+- [Installing NodeJS](wiki/Installing)
 
 ### FoxNode API for NodeJS ###
 
