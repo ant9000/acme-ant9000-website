@@ -1,4 +1,4 @@
-## FoxNode - a NodeJS library for interacting with FoxBoard hardware ##
+## FoxNode - a NodeJS library for interfacing with FoxBoard hardware ##
 
 ![Node JS](http://nodejs.org/logos/nodejs.png)
 ![Acme Systems](http://www.acmesystems.it/images/LogoAcmeSystemsBlue_160.png)
