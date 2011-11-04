@@ -1,8 +1,8 @@
 ## FoxNode - a NodeJS library for interacting with FoxBoard hardware ##
 
-![FoxBoard G20](http://www.acmesystems.it/www/FOXG20/foxg20.jpg)
-![Acme Systems](http://www.acmesystems.it/images/LogoAcmeSystemsBlue_160.png)
 ![Node JS](http://nodejs.org/logos/nodejs.png)
+![Acme Systems](http://www.acmesystems.it/images/LogoAcmeSystemsBlue_160.png)
+![FoxBoard G20](http://www.acmesystems.it/www/FOXG20/foxg20.jpg)
 
 The [FoxBoard](http://www.acmesystems.it/?id=FOXG20) is a tiny but powerful Linux embedded system produced by the Italian firm [AcmeSystems](http://www.acmesystems.it/), sporting a Debian operative system and a rich set of solderless peripherals, known as [Daisy modules](http://www.acmesystems.it/?id=index_daisy).
 
