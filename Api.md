@@ -1,8 +1,8 @@
 ### The FoxNode server-side API ###
 
-FoxNode aims at simplifying access to your hardware resources from within NodeJS. The library innermost part is [acme.gpio](../../blob/master/acme/gpio/), a thin wrapper around the Linux kernel [GPIO](http://www.kernel.org/doc/Documentation/gpio.txt) sys interface. A C helper program for dispatching user space interrupts to NodeJS is also included: your code can react immediately to state changes, without wasting CPU cycles in querying the hardware.
+FoxNode aims at simplifying access to your hardware resources from within NodeJS. The library innermost part is [acme.gpio](/ant9000/FoxNode/blob/master/acme/gpio/), a thin wrapper around the Linux kernel [GPIO](http://www.kernel.org/doc/Documentation/gpio.txt) sys interface. A C helper program for dispatching user space interrupts to NodeJS is also included: your code can react immediately to state changes, without wasting CPU cycles in querying the hardware.
 
-The higher level [acme.daisy](../../blob/master/daisy/) interface builds on these facilities to offer a simple programmatic access to Daisy devices. For now, only Daisy5 and Daisy11 are implemented, but support for more peripherals is planned.
+The higher level [acme.daisy](/ant9000/FoxNode/blob/master/daisy/) interface builds on these facilities to offer a simple programmatic access to Daisy devices. For now, only Daisy5 and Daisy11 are implemented, but support for more peripherals is planned.
 
 -  [GPIO][GPIO]
 -  [Daisy5][Daisy5]
@@ -13,80 +13,92 @@ The higher level [acme.daisy](../../blob/master/daisy/) interface builds on thes
 
 First step, create a new GPIO pin object:
 
-        var pin = new GPIO(name,direction,value);
+```javascript
+var pin = new GPIO(name,direction,value);
+```
 
 where
 
-- <code>name</code> is any of the Fox/Daisy connectors, i.e. J6.X, J7.X, D1.X, ..., D8.X,
-  or a kernel id number
-- <code>direction</code> is one of "in" or "out"
-- <code>value</code> can be 0 or 1
+- *name* is any of the Fox/Daisy connectors, i.e. *'J6.1'*, *'J7.1'*, *'D1.1'*, ..., *'D8.8'*, or a kernel id number
+- *direction* is one of *'in'* or *'out'*
+- *value* can be *0* or *1*
 
 Direction and value can be read and changed after initialization with the following methods:
 
-        pin.direction()           # get
-        pin.direction(direction)  # set
+```javascript
+pin.direction()           # get
+pin.direction(direction)  # set
 
-        pin.value()               # get
-        pin.value(value)          # set
+pin.value()               # get
+pin.value(value)          # set
+```
 
 Upon creation, the pin initializes the underlying hardware in order to react to state changes via interrupts. NodeJS is informed of such changes using a 'data' event, that can be used like this:
 
-        pin.on('data',function(data){
-          console.log(
-            'Pin:   '+data.name +', '+
-            'Value: '+data.value+', '+
-            'Count: '+data.count
-          );
-        });
+```javascript
+pin.on('data',function(data){
+  console.log(
+    'Pin:   '+data.name +', '+
+    'Value: '+data.value+', '+
+    'Count: '+data.count
+  );
+});
+```
 
-There is also a read-only property
+There is also a read-only property *pin.count* representing the number of value changes since pin instantiation.
 
-        pin.count
+It is possible to stop the event generation with 
 
-representing the number of value changes since pin instantiation.
-
-It is possible to stop the event generation with
-
-        pin.pause();
+```javascript
+pin.pause();
+```
 
 and to restart it afterwards with
 
-        pin.resume();
+```javascript
+pin.resume();
+```
 
 [Daisy5]: The API for Daisy5
 -----------------------------
 
 In order to instantiate a new Daisy5, the code is
 
-        var daisy5 = new acme.daisy.Daisy5(port);
+```javascript
+var daisy5 = new acme.daisy.Daisy5(port);
+```
 
-where <code>port</code> is one of 'D2' or 'D5'.
+where *port* is one of *'D2'* or *'D5'*.
 
 Daisy5 is configured as 8 input pins, readable as
 
-        daisy5.P1
-        daisy5.P2
-        ...
-        daisy5.P8
+```javascript
+daisy5.P1
+daisy5.P2
+...
+daisy5.P8
+```
 
 and also as
 
-        daisy5.state(btn)
+```javascript
+daisy5.state(btn)
+```
 
-where btn is one of 'P1' ... 'P8'.
+where *btn* is one of *'P1'* ... *'P8'*.
 
-Whenever one of the buttons changes state, the object will emit a 'data' event:
+Whenever one of the buttons changes state, the object will emit a *'data'* event:
 
-        daisy5.on('data',function(data){
-          console.log(
-            'Port:   '+data.port+', '+
-            'Button: '+data.button+', '+
-            'Value:  '+data.value+', '+
-            'Count:  '+data.count
-          );
-        });
-
+```javascript
+daisy5.on('data',function(data){
+  console.log(
+    'Port:   '+data.port+', '+
+    'Button: '+data.button+', '+
+    'Value:  '+data.value+', '+
+    'Count:  '+data.count
+  );
+});
+```
 
 [Daisy11]: The API for Daisy11
 ------------------------------
