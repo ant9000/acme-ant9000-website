@@ -39,7 +39,7 @@ to your */etc/apt/sources.list* file, so that *apt-get source* will know where t
 
 NodeJS is based on Javascript V8, which on Debian is packaged separately as *libv8* to be shared with other packages (most notably, with Chromium).
 
-**NB**: in the following instructions we refer to specific version numbers - these are likely going to be different by the time you need them, so please adjust them accordingly.
+**NB**: in the following instructions we refer to specific version numbers - these are likely going to be different by the time you need them, so please adjust the commands accordingly.
 
 A dependency of *libv8* is *libev4*, which we are going to rebuild first:
 
