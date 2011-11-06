@@ -3,10 +3,11 @@
 FoxNode library comes with some examples, written to show how easy it is to develop on the FoxBoard using NodeJS.
 
 Here is the complete list:
-* [server side test for acme.gpio](#test_gpio.js)
-* [server side test for acme.daisy](#test_daisy.js)
-* [web app sample for GPIO, using meryl](#meryl_gpio)
-* [web app sample for Daisy, using express](#express_daisy)
+
+*  [server side test for acme.gpio](#test_gpio.js)
+*  [server side test for acme.daisy](#test_daisy.js)
+*  [web app sample for GPIO, using meryl](#meryl_gpio)
+*  [web app sample for Daisy, using express](#express_daisy)
 
 
 <a name="test_gpio.js">A server side test for acme.gpio</a>
