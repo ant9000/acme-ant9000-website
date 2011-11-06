@@ -60,7 +60,7 @@ will toggle the state of L3 on Daisy11 - you will see the led switching on and o
 <a name="meryl_gpio">Web app sample for GPIO, using meryl</a>
 ------------------------------------------------------------
 
-This [sample](/ant9000/FoxNode/tree/master/examples/mery_gpio/) uses the same setup as the server side GPIO test, i.e. a push button connected to J7.3 and a led wired to J7.4 - but this time the interaction with the users will not be on the FoxBoard console, but on a web page.
+This [sample](/ant9000/FoxNode/tree/master/examples/meryl_gpio/) uses the same setup as the server side GPIO test, i.e. a push button connected to J7.3 and a led wired to J7.4 - but this time the interaction with the users will not be on the FoxBoard console, but on a web page.
 
 On first usage, type
 
