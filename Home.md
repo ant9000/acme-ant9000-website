@@ -16,4 +16,4 @@ FoxNode aim is to simplify usage of the FoxBoard and its related add-ons under t
 
 ![Node JS](http://nodejs.org/logos/nodejs.png)
 ![Acme Systems](http://www.acmesystems.it/images/LogoAcmeSystemsBlue_160.png)
-![FoxBoard G20](http://www.acmesystems.it/www/FOXG20/foxg20.jpg)
+![FoxBoard G20](http://www.acmesystems.it/www/main_page//minifox.jpg)
