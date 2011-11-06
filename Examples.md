@@ -57,5 +57,12 @@ killall -USR2 test_daisy.js
 
 will toggle the state of L3 on Daisy11 - you will see the led switching on and off, and a console log will also inform you of the change.
 
-* [web app sample for GPIO, using meryl](#meryl_gpio)
-* [web app sample for Daisy, using express](#express_daisy)
+< name="meryl_gpio">Web app sample for GPIO, using meryl</a>
+------------------------------------------------------------
+
+TODO
+
+<a name="express_daisy">Web app sample for Daisy, using express</a>
+-------------------------------------------------------------------
+
+TODO
