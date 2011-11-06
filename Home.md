@@ -8,11 +8,11 @@ With NodeJS and its rich set of libraries, transforming your tiny FoxBoard into 
 
 FoxNode aim is to simplify usage of the FoxBoard and its related add-ons under the NodeJS framework, in order to fully leverage both the embedded hardware capabilities of the board and the productiveness and confort of a state-of-art web development platform.
 
-- [Installing NodeJS](wiki/Installing)
-- [The FoxNode server-side API](wiki/API)
-- [Working on the client side - the widgets](wiki/Widgets)
-- [A look at the examples](wiki/Examples)
-- [Links to further documentation](wiki/Links)
+- [Installing NodeJS](/ant9000/FoxNode/wiki/Installing)
+- [The FoxNode server-side API](/ant9000/FoxNode/wiki/Api)
+- [Working on the client side - the widgets](/ant9000/FoxNode/wiki/Widgets)
+- [A look at the examples](/ant9000/FoxNode/wiki/Examples)
+- [Links to further documentation](/ant9000/FoxNode/wiki/Links)
 
 ![Node JS](http://nodejs.org/logos/nodejs.png)
 ![Acme Systems](http://www.acmesystems.it/images/LogoAcmeSystemsBlue_160.png)
