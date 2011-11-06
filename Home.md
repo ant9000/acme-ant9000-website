@@ -14,6 +14,6 @@ FoxNode aim is to simplify usage of the FoxBoard and its related add-ons under t
 - [A look at the examples](/ant9000/FoxNode/wiki/Examples)
 - [Links to further documentation](/ant9000/FoxNode/wiki/Links)
 
-![Node JS](http://nodejs.org/logos/nodejs.png)
-![Acme Systems](http://www.acmesystems.it/images/LogoAcmeSystemsBlue_160.png)
-![FoxBoard G20](http://www.acmesystems.it/www/main_page//minifox.jpg)
+<a href="http://nodejs.org"><img src="http://nodejs.org/logos/nodejs.png" alt="Node JS"/></a>
+<a href="http://www.acmesystems.it/"><img src="http://www.acmesystems.it/images/LogoAcmeSystemsBlue_160.png" alt="Acme Systems"/></a>
+<a href="http://www.acmesystems.it/?id=FOXG20"><img src="http://www.acmesystems.it/www/main_page//minifox.jpg" alt="FoxBoard G20"/></a>
