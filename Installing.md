@@ -95,4 +95,16 @@ Et voilà, les jeux sont faits!
 <a name="src">Installing from source</a>
 ----------------------------------------
 
-TODO
+In case you prefer to build your own version of Node or NPM, instead of relying on Debian packages which might be outdated, here is 
+a quick command list:
+
+```bash
+apt-get -y install libssl-dev pkg-config
+wget http://nodejs.org/dist/node-v0.4.12.tar.gz
+tar -zxf node-v0.4.12.tar.gz
+cd node-v0.4.12
+./configure && make && make install
+curl http://npmjs.org/install.sh | sudo sh
+```
+
+Of course, compilation on the FoxBoard takes quite some time - be patient, and you will be rewarded!
