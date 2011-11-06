@@ -78,11 +78,15 @@ In order to show something on the LCD, simply use
 ```javascript
 myLcd.display(str);
 ```
+
 where *str* should be an hexadecimal string.
 
 
 <a name="daisy">Daisy5 and Daisy11</a>
 --------------------------------------
+
+I have decided to implement a view for Daisy5 (8 push buttons) and Daisy11 (8 leds) as a jQuery plugin. Usage is extremely simple:
+include both jQuery and the plugin as
 
 ```html
 <link rel="stylesheet" href="/css/jquery-daisy.css" type="text/css" />
@@ -90,19 +94,33 @@ where *str* should be an hexadecimal string.
 <script src="/js/jquery-daisy.js"></script>
 ```
 
+at the top of your HTML page. You can then instantiate the object as
+
 ```javascript
 var daisy5  = $(elem1).Daisy5();
 var daisy11 = $(elem2).Daisy11();
 ```
+
+where *elem1* and *elem2* can be any valid jQuery selector. In order to set the state of a button (for Daisy5) or led (for Daisy11), the code needed is
 
 ```javascript
 daisy5.Daisy5('state',button,value);
 daisy11.Daisy11('state',led,value);
 ```
 
+where *button* is one of *'P1'*, ..., *'P8'*, *led* one of *'L1'*, ..., *'L8'* and *value* can be *0* or *1*.
+
+Since Daisy11 are outputs, you might want the user to interact with the widget. When somebody clicks on it, it will generate a jQuery custom event named *daisy11*, that you can bind to with
+
 ```javascript
 daisy11.bind('daisy11',function(event,data){ 
-  // data = { led: ..., value: ... }
 });
 ```
 
+Apart from the usual *event* parameter, your callback receives an array *data* with the keys
+
+```javascript
+{ led: ..., value: ... }
+```
+
+where *led* can be any of *'L1'*, ..., *'L8'*, and *value* is *0* or *1*.
