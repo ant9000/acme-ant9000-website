@@ -4,12 +4,12 @@ FoxNode aims at simplifying access to your hardware resources from within NodeJS
 
 The higher level [acme.daisy](/ant9000/FoxNode/blob/master/daisy/) interface builds on these facilities to offer a simple programmatic access to Daisy devices. For now, only Daisy5 and Daisy11 are implemented, but support for more peripherals is planned.
 
--  [GPIO][GPIO]
--  [Daisy5][Daisy5]
--  [Daisy11][Daisy11]
+-  [GPIO](#GPIO)
+-  [Daisy5](#Daisy5)
+-  [Daisy11](#Daisy11)
 
-[GPIO]: The API for GPIO
-------------------------
+<a name="GPIO">The API for GPIO</a>
+-----------------------------------
 
 First step, create a new GPIO pin object:
 
@@ -59,8 +59,8 @@ and to restart it afterwards with
 pin.resume();
 ```
 
-[Daisy5]: The API for Daisy5
------------------------------
+<a name="Daisy5">The API for Daisy5</a>
+---------------------------------------
 
 In order to instantiate a new Daisy5, the code is
 
@@ -100,36 +100,44 @@ daisy5.on('data',function(data){
 });
 ```
 
-[Daisy11]: The API for Daisy11
-------------------------------
+<a name="Daisy11">The API for Daisy11</a>
+-----------------------------------------
 
 In order to instantiate a new Daisy11, the code is
 
-        var daisy11 = new acme.daisy.Daisy11(port);
+```javascript
+var daisy11 = new acme.daisy.Daisy11(port);
+```
 
-where <code>port</code> is one of 'D2' or 'D5'.
+where *port* is one of *'D2'* or *'D5'*.
 
 Daisy11 is configured as 8 output pins, readable and writable as
 
-        daisy11.L1
-        daisy11.L2
-        ...
-        daisy11.L8
+```javascript
+daisy11.L1
+daisy11.L2
+...
+daisy11.L8
+```
 
 and also as
 
-        daisy11.state(led)
-        daisy11.state(led,value)
+```javascript
+daisy11.state(led)
+daisy11.state(led,value)
+```
 
-where led is one of 'L1' ... 'L8'.
+where *led* is one of *'L1'* ... *'L8'*.
 
-Whenever one of the leds changes state, the object will emit a 'data' event:
+Whenever one of the leds changes state, the object will emit a *'data'* event:
 
-        daisy11.on('data',function(data){
-          console.log(
-            'Port:  '+data.port+', '+
-            'Led:   '+data.led+', '+
-            'Value: '+data.value+', '+
-            'Count: '+data.count
-          );
-        });
+```javascript
+daisy11.on('data',function(data){
+  console.log(
+    'Port:  '+data.port+', '+
+    'Led:   '+data.led+', '+
+    'Value: '+data.value+', '+
+    'Count: '+data.count
+  );
+});
+```
