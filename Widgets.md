@@ -1,8 +1,8 @@
 ### FoxNode Web page widgets ###
 
-With the intent of making my [examples](/ant9000/FoxNode/tree/master/examples/) nicer, I wrote a few Javascript widgets that could be useful for their own sake - you can find them in the [media](/ant9000/FoxNode/tree/master/media/js) folder of FoxNode. 
+With the intent of making my [examples](/ant9000/FoxNode/tree/master/examples/) nicer, I wrote a few Javascript widgets that you can find in the [media](/ant9000/FoxNode/tree/master/media/js) folder of FoxNode. 
 
-I will try to present them here in some more detail:
+Since they could be useful for their own sake, I will try to present them here in some detail:
 
 *  [LED](#led)
 *  [7-segment display](#lcd)
