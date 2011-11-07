@@ -15,7 +15,7 @@ First step, create a new GPIO pin object:
 
 ```javascript
 var acme = require('acme'),
-    pin  = new acme.gpioGPIO(name,direction,value);
+    pin  = new acme.gpio.GPIO(name,direction,value);
 ```
 
 where
