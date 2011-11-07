@@ -78,7 +78,7 @@ The example is executed as
 
 Wait a few seconds for the *socket.io started* message to appear on console, then point your browser to port 8080 of the Fox and enjoy.
 
-Push the button: the green led on the page will light up instantly. Click on the red leds on the page, and the real led will react at once - retroacting a change on the page, too.
+Push the button: the green led on the page will light up instantly. Click on the red led on the webpage, and the real led will react at once - retroacting a change on the page, too.
 
 For more fun, point multiple browser windows to the same page and watch them as they synchronize in real time.
 
@@ -103,6 +103,6 @@ The example is executed as
 
 Wait a few seconds for the *socket.io started* message to appear on console, then point your browser to port 3000 of the Fox and enjoy.
 
-Push any button on your Daisy5: the corresponding green led on the page will light up instantly. Click on the red leds on the page, and the Daisy11 leds will react immediately - retroacting a change on the page, too.
+Push any button on your Daisy5: the corresponding green led on the page will light up instantly. Click any of the red leds on the webpage, and the Daisy11 leds will react immediately - retroacting a change on the page, too.
 
 For more fun, point multiple browser windows to the same page and watch them as they synchronize in real time.
