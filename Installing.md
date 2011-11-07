@@ -99,11 +99,15 @@ In case you prefer to build your own version of Node or NPM, instead of relying 
 a quick command list:
 
 ```bash
-apt-get -y install libssl-dev pkg-config
+apt-get -y install scons libssl libssl-dev pkg-config
 wget http://nodejs.org/dist/node-v0.4.12.tar.gz
 tar -zxf node-v0.4.12.tar.gz
 cd node-v0.4.12
-./configure && make && make install
+export CFLAGS="-march=armv5te"
+export CCFLAGS="-march=armv5te"
+./configure
+make
+make install
 curl http://npmjs.org/install.sh | sh
 ```
 
