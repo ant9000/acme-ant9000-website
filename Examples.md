@@ -19,7 +19,7 @@ For this [example](/ant9000/FoxNode/tree/master/examples/test_gpio.js) we make u
 node test_gpio.js
 ```
 
-and leave it running. If you press the button, the program will log the state change on the console. Moreover, the app reacts to signals USR1 and USR2: if you open another connection to the FoxBoard, the command
+and leave it running. If you press the button, the program will log the state change to the console. Moreover, the app reacts to signals USR1 and USR2: if you open another connection to the FoxBoard, the command
 
 ```bash
 killall -USR1 test_gpio.js
@@ -43,7 +43,7 @@ For trying this [sample](/ant9000/FoxNode/tree/master/examples/test_daisy.js) yo
 node test_daisy.js
 ```
 
-and leave it running. If you press any button on the Daisy5, the program will log the button state change on the console. Moreover, the app reacts to signals USR1 and USR2: if you open another connection to the FoxBoard, the command
+and leave it running. If you press any button on the Daisy5, the program will log the button state change to the console. Moreover, the app reacts to signals USR1 and USR2: if you open another connection to the FoxBoard, the command
 
 ```bash
 killall -USR1 test_daisy.js
