@@ -34,7 +34,7 @@ pin.value()               # get
 pin.value(value)          # set
 ```
 
-Upon creation, the pin initializes the underlying hardware in order to react to state changes via interrupts. NodeJS is informed of such changes using a 'data' event, that can be used like this:
+Upon creation, the pin initializes the underlying hardware in order to react to state changes via interrupts. NodeJS is informed of such changes using a *'data'* event, that can be used like this:
 
 ```javascript
 pin.on('data',function(data){
