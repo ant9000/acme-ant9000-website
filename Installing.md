@@ -104,7 +104,7 @@ wget http://nodejs.org/dist/node-v0.4.12.tar.gz
 tar -zxf node-v0.4.12.tar.gz
 cd node-v0.4.12
 ./configure && make && make install
-curl http://npmjs.org/install.sh | sudo sh
+curl http://npmjs.org/install.sh | sh
 ```
 
 Of course, compilation on the FoxBoard takes quite some time - be patient, and you will be rewarded!
