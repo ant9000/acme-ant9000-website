@@ -21,7 +21,7 @@ apt-get -f install
 node -v
 ```
 
-(with these instructions you will not to install the *dbg* packages, which are big and mostly needed to debug NodeJS itself).
+(with these instructions you will not install the *dbg* packages, which are big and mostly needed to debug NodeJS itself).
 
 <a name="deb-build">Compiling your own .deb packages</a>
 --------------------------------------------------------
