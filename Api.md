@@ -108,7 +108,8 @@ daisy5.on('data',function(data){
 In order to instantiate a new Daisy11, the code is
 
 ```javascript
-var daisy11 = new acme.daisy.Daisy11(port);
+var acme = require('acme'),
+    daisy11 = new acme.daisy.Daisy11(port);
 ```
 
 where *port* is one of *'D2'* or *'D5'*.
