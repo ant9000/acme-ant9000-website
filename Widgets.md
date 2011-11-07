@@ -94,7 +94,7 @@ include both jQuery and the plugin as
 <script src="/js/jquery-daisy.js"></script>
 ```
 
-at the top of your HTML page. You can then instantiate the object as
+at the top of your HTML page. You can then instantiate the objects as
 
 ```javascript
 var daisy5  = $(elem1).Daisy5();
