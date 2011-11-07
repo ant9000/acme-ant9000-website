@@ -14,7 +14,8 @@ The higher level [acme.daisy](/ant9000/FoxNode/tree/master/daisy/) interface bui
 First step, create a new GPIO pin object:
 
 ```javascript
-var pin = new GPIO(name,direction,value);
+var acme = require('acme'),
+    pin  = new acme.gpioGPIO(name,direction,value);
 ```
 
 where
@@ -65,7 +66,8 @@ pin.resume();
 In order to instantiate a new Daisy5, the code is
 
 ```javascript
-var daisy5 = new acme.daisy.Daisy5(port);
+var acme = require('acme'),
+    daisy5 = new acme.daisy.Daisy5(port);
 ```
 
 where *port* is one of *'D2'* or *'D5'*.
