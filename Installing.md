@@ -95,17 +95,16 @@ Et voilà, les jeux sont faits!
 <a name="src">Installing from source</a>
 ----------------------------------------
 
-In case you prefer to build your own version of Node or NPM, instead of relying on Debian packages which might be outdated, here is 
-a quick command list:
+You might prefer building a newer version of Node or NPM, instead of relying on Debian packages which might be outdated. Since Node version 0.6.0 is just landed, here is the quick command list to compilation:
 
 ```bash
-apt-get -y install scons libssl libssl-dev pkg-config
-wget http://nodejs.org/dist/node-v0.4.12.tar.gz
-tar -zxf node-v0.4.12.tar.gz
-cd node-v0.4.12
+apt-get -y install libssl libssl-dev pkg-config
+wget http://nodejs.org/dist/node-v0.6.0.tar.gz
+tar -zxf node-v0.6.0.tar.gz
+cd node-v0.6.0
 export CFLAGS="-march=armv5te"
 export CCFLAGS="-march=armv5te"
-./configure
+./configure --without-snapshot
 make
 make install
 curl http://npmjs.org/install.sh | sh
