@@ -17,3 +17,15 @@ FoxNode aim is to simplify usage of the FoxBoard and its related add-ons under t
 <a target=_new href="http://nodejs.org"><img src="http://nodejs.org/logos/nodejs.png" alt="Node JS"/></a>
 <a target=_new href="http://www.acmesystems.it/"><img src="http://www.acmesystems.it/images/LogoAcmeSystemsBlue_160.png" alt="Acme Systems"/></a>
 <a target=_new href="http://www.acmesystems.it/?id=FOXG20"><img src="http://www.acmesystems.it/www/main_page//minifox.jpg" alt="FoxBoard G20"/></a>
+
+## Related links
+
+This library does not pretend to show each and every capability of the FoxBoard itself, nor to exhibit what can be accomplished with NodeJS: quite on the contrary, it just scratches the surface of what is possible. If you want to know more, we encourage you to dig into the copious documentation available online. 
+
+To get you on track, here is a list of the most relevant starting points:
+
+* [FoxBoard developer docs](?id=index_foxg20)
+* [NodeJS official site](http://nodejs.org)
+* [npm](http://npmjs.org/), the Node Package Manager, and the thousands of registered [modules](http://search.npmjs.org/)
+* [Socket.IO](http://socket.io/), realtime communication for the browser
+* [Express](http://expressjs.com/), higher level web-development framework
