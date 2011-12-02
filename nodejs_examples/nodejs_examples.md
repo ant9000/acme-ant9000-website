@@ -4,7 +4,11 @@ FoxNode library comes with some examples, written to show how easy it is to deve
 
 ## A simple server side test for acme.gpio
 
-With this first example <span class="github" user="ant9000" project="FoxNode" file="examples/test_gpio.js">test_gpio.js</span> we make use of two GPIO pins, namely J7.3 as input and J7.4 as output. Wire a push button between J7.3 and J7.40, and a led in series with a 1kOhm resistance between J7.4 and J7.1, then execute the program with
+With this first example 
+<span class="github" user="ant9000" project="FoxNode" file="examples/test_gpio.js">
+test_gpio.js
+</span>
+we make use of two GPIO pins, namely J7.3 as input and J7.4 as output. Wire a push button between J7.3 and J7.40, and a led in series with a 1kOhm resistance between J7.4 and J7.1, then execute the program with
 
 <pre class="minicom">
 node test_gpio.js
@@ -26,7 +30,11 @@ will toggle the state of J7.4 - you will see the led switching on and off, and a
 
 ## A server side test for acme.daisy
 
-For trying this [sample](https://github.com/ant9000/FoxNode/tree/master/examples/test_daisy.js) you need a Daisy1 (the Daisy connector module), a Daisy5 (8 push buttons) and a Daisy11 (8 leds). Plug the Daisy1 onto your FoxBoard, then connect the Daisy5 to D5 and the Daisy11 to D2. You can then launch the program as
+For trying the 
+<span class="github" user="ant9000" project="FoxNode" file="examples/test_daisy.js">
+test_daisy.js
+</span>
+example you need a Daisy1 (the Daisy connector module), a Daisy5 (8 push buttons) and a Daisy11 (8 leds). Plug the Daisy1 onto your FoxBoard, then connect the Daisy5 to D5 and the Daisy11 to D2. You can then launch the program as
 
 <pre class="minicom">
 node test_daisy.js
