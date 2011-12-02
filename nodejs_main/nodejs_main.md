@@ -12,7 +12,6 @@ FoxNode aim is to simplify usage of the FoxBoard and its related add-ons under t
 - [The FoxNode server-side API](?id=nodejs_api)
 - [Working on the client side - the widgets](?id=nodejs_widgets)
 - [A look at the examples](?id=nodejs_examples)
-- [Links to further documentation](?id=nodejs_links)
 
 <a target=_new href="http://nodejs.org"><img src="http://nodejs.org/logos/nodejs.png" alt="Node JS"/></a>
 <a target=_new href="http://www.acmesystems.it/"><img src="http://www.acmesystems.it/images/LogoAcmeSystemsBlue_160.png" alt="Acme Systems"/></a>
