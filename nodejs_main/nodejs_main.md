@@ -1,6 +1,8 @@
 # FoxNode - a NodeJS library for interfacing with FoxBoard hardware ##
 
+<!--
 The [FoxBoard](http://www.acmesystems.it/?id=FOXG20) is a tiny but powerful Linux embedded system produced by the Italian firm [AcmeSystems](http://www.acmesystems.it/), sporting a Debian operative system and a rich set of solderless peripherals, known as [Daisy modules](?id=index_daisy).
+-->
 
 [NodeJS](http://nodejs.org/) is a server-side Javascript development framework designed for very high concurrency, with extremely low overhead and blazingly fast response times. Its most invaluable library is Socket.IO, a fast communication library that implements web sockets (and much more) and enables true bidirectional real-time communication between the web server and its clients.
 
